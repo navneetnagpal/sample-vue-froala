@@ -3,11 +3,13 @@
 
 import 'froala-editor/css/froala_editor.pkgd.min.css';
 import 'froala-editor/css/froala_style.min.css';
-
+import FroalaEditor from 'froala-editor';
 import 'froala-editor/js/plugins/align.min.js';
 import 'froala-editor/js/plugins/image.min.js';
 // import 'froala-editor/js/plugins.pkgd.min.js';
-
+window.FE = FroalaEditor;
+// check the instances for key etc
+console.log(FroalaEditor.INSTANCES);
 import App from './examples/App'
 import Vue from 'vue'
 import VueFroala from 'vue-froala-wysiwyg';
